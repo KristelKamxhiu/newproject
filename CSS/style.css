@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid blue;  na mundeson vendosjen e te dhenave ne menyre tabelare per te pare hapesiren qe ato zene te faqja ne menyre qe te bejme modifikimet */
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand img{
+    width: 70px;
+    height: 70px;
+}
+
+.carousel-inner, .carousel-inner img{
+    height: 900px;
+    object-fit: none;
+    width: 100%;
+}
