@@ -17,7 +17,12 @@ body{
 }
 
 .carousel-inner, .carousel-inner img{
-    height: 900px;
+    height: 960px;
     object-fit: none;
     width: 100%;
 }
+
+/* vendoset ne vend te h-100 te imazhi dhe card */
+/* .card img{
+    height: 200px;        
+}/* 
