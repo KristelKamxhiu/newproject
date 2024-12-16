@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg position-absolute top-0 w-100 p-3 mb-2 bg-body-tertiary">
+            <!-- 'bg-body-tertiary' - te mundeson te vendosesh nje ngjyre background te rreshti navbar-->
+            <!--'lg' - shfaq elementet ne nje rresht kur ekrani eshte i madh-->
+            <div class="container-fluid">
+                <!--'container-fluid' - te mundeson vendosjen e lementeve ne nje rresht duke percaktuar widht the length e faqes-->
+                <a class="navbar-brand" href="index.html"><img src="Image/logo-removebg-preview.png" alt=""> <br>
+                    <span class="ps-5"> Coding Time! </span></a>
+                <!-- 'ps-5' - te mundeson levizjen e tekstit majtas-djathtas ose ne qender ne baze te hapesires qe ato mund te zene-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <!--'mx' - levizjen e teksteve majtas djathtas apo ne qender nga teksti kryesor-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5 mt-5">
+        <section class="container my-5 pt-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47934.10796158665!2d19.817823200000003!3d41.3331847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13502e198eaa714b%3A0xa858ccaf5ac85b57!2sQTU%20-%20Qendra%20Tregtare%20Univers!5e0!3m2!1sen!2s!4v1734361216576!5m2!1sen!2s"
+                         style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="surname" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="surname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comment</label>
+                            <textarea id="comment" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-outline-primary" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="Image/logo-removebg-preview.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni incidunt dolores asperiores
+                        reiciendis minus hic, possimus ratione id sint perspiciatis sit facilis.</p>
+                </div>
+                <div class="col">
+                    <p><a href="#">Destination</a></p>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Packages</a></p>
+                    <p><a href="#">Terms</a></p>
+                </div>
+                <div class="col">
+                    <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
+                    <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+                    <p><a href=""><i class="fa-brands fa-whatsapp"></i></a></p>
+                </div>
+                <div class="col">
+                    <h4>Subscribe</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <input type="submit" class="btn btn-outline-primary" value="Send">
+                    </form>
+                </div>
+                <div class="col-12">
+                    <p>Copyrights: <span id="year"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript/bootstrap.bundle.min.js"></script>
+
+    <!--lidhja me file ton te javascript-->
+    <script src="Javascript/index.js"></script>
 </body>
+
 </html>
