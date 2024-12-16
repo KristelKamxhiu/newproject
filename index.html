@@ -7,6 +7,7 @@
     <title>Document</title>
     <!--lidhja me filen e bootstrap ne CSS-->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
     <!--lidhja me CSS time-->
     <link rel="stylesheet" href="CSS/style.css">
@@ -96,7 +97,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-info" type="submit">Search</button>
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -197,7 +198,7 @@
 
         <!--About-->
 
-        <section class="container-fluid">
+        <section class="container-fluid my-5">
             <div class="row">
 
                 <div class="col-12 col-md-7 px-0">
@@ -221,6 +222,46 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="Image/logo-removebg-preview.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni incidunt dolores asperiores
+                        reiciendis minus hic, possimus ratione id sint perspiciatis sit facilis.</p>
+                </div>
+                <div class="col">
+                    <p><a href="#">Destination</a></p>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Packages</a></p>
+                    <p><a href="#">Terms</a></p>
+                </div>
+                <div class="col">
+                    <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>    
+                    <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+                    <p><a href=""><i class="fa-brands fa-whatsapp"></i></a></p>
+                </div>
+                <div class="col">
+                    <h4>Subscribe</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <input type="submit" class="btn btn-outline-primary" value="Send">
+                    </form>
+                </div>
+                <div class="col-12">
+                    <p>Copyrights: <span id="year"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
     <!--lidhja me bootstrapin ne Javascript-->
     <script src="Javascript/bootstrap.bundle.min.js"></script>
 
